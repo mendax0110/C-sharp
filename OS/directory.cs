@@ -16,8 +16,10 @@ namespace directory_list
             // get the directory
             System.IO.DirectoryInfo dir = new System.IO.DirectoryInfo(@"PASTE THE PATH HERE");
 
+            // get the files
             foreach(System.IO.FilInfo file in dir.GetFiles("*.*"))
             {
+                // print the file name
                 Console.WriteLine("{0}, {1}", file.Name, file.Length);
             }
             Console.ReadLine();
