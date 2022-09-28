@@ -28,15 +28,19 @@ int num2 = 0;
     // use a switch statement to do the math
     switch(Console.ReadLine())
     {
+        // if the user chooses to add
         case "a":
             Console.WriteLine($"Your result: {num1} + {num2} = " + (num1 + num2));
             break;
+        // if the user chooses to subtract
         case "s":
             Console.WriteLine($"Your result: {num1} - {num2} = " + (num1 - num2));
             break;
+        // if the user chooses to multiply
         case "m":
             Console.WriteLine($"Your result: {num1} * {num2} = " + (num1 * num2));
             break;
+        // if the user chooses to divide
         case "d":
             Console.WriteLine($"Your result: {num1} / {num2} = " + (num1 / num2));
             break;
