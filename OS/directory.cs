@@ -22,6 +22,7 @@ namespace directory_list
                 // print the file name
                 Console.WriteLine("{0}, {1}", file.Name, file.Length);
             }
+            // read the input
             Console.ReadLine();
         }
     }
