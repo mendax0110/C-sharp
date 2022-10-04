@@ -14,11 +14,15 @@ namespace OHM
         //main function
         static void Main(string[] args)
         {
+            // display the title
             Console.WriteLine("This is an application to find the voltage\n------------------------------------------");
+            // ask for the current
             Console.WriteLine("Enter the I value:\n------------------");
             current = double.Parse(Console.ReadLine());
+            // ask for the resistance
             Console.WriteLine("Enter the R value:\n------------------");
             resistance = double.Parse(Console.ReadLine());
+            // display the voltage
             Console.WriteLine("-----------------------------");
             double voltage = current * resistance;
             Console.WriteLine("{1} Ampere * {2} Ohm = {0} Volt", voltage, current, resistance);

@@ -48,5 +48,6 @@ int num2 = 0;
 
     // wait for the user to respond before closing
     Console.Write("Press any key to close the Calculator console app...");
+    // read the key
     Console.ReadKey();
     
