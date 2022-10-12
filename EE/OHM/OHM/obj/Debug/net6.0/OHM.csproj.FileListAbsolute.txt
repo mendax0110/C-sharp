@@ -1,0 +1,15 @@
+C:\Users\Adrian\source\repos\OHM\OHM\bin\Debug\net6.0\OHM.exe
+C:\Users\Adrian\source\repos\OHM\OHM\bin\Debug\net6.0\OHM.deps.json
+C:\Users\Adrian\source\repos\OHM\OHM\bin\Debug\net6.0\OHM.runtimeconfig.json
+C:\Users\Adrian\source\repos\OHM\OHM\bin\Debug\net6.0\OHM.dll
+C:\Users\Adrian\source\repos\OHM\OHM\bin\Debug\net6.0\OHM.pdb
+C:\Users\Adrian\source\repos\OHM\OHM\obj\Debug\net6.0\OHM.csproj.AssemblyReference.cache
+C:\Users\Adrian\source\repos\OHM\OHM\obj\Debug\net6.0\OHM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Adrian\source\repos\OHM\OHM\obj\Debug\net6.0\OHM.AssemblyInfoInputs.cache
+C:\Users\Adrian\source\repos\OHM\OHM\obj\Debug\net6.0\OHM.AssemblyInfo.cs
+C:\Users\Adrian\source\repos\OHM\OHM\obj\Debug\net6.0\OHM.csproj.CoreCompileInputs.cache
+C:\Users\Adrian\source\repos\OHM\OHM\obj\Debug\net6.0\OHM.dll
+C:\Users\Adrian\source\repos\OHM\OHM\obj\Debug\net6.0\refint\OHM.dll
+C:\Users\Adrian\source\repos\OHM\OHM\obj\Debug\net6.0\OHM.pdb
+C:\Users\Adrian\source\repos\OHM\OHM\obj\Debug\net6.0\OHM.genruntimeconfig.cache
+C:\Users\Adrian\source\repos\OHM\OHM\obj\Debug\net6.0\ref\OHM.dll
