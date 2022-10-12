@@ -1,0 +1,15 @@
+C:\Users\Adrian\source\repos\calculator\calculator\bin\Debug\net6.0\calculator.exe
+C:\Users\Adrian\source\repos\calculator\calculator\bin\Debug\net6.0\calculator.deps.json
+C:\Users\Adrian\source\repos\calculator\calculator\bin\Debug\net6.0\calculator.runtimeconfig.json
+C:\Users\Adrian\source\repos\calculator\calculator\bin\Debug\net6.0\calculator.dll
+C:\Users\Adrian\source\repos\calculator\calculator\bin\Debug\net6.0\calculator.pdb
+C:\Users\Adrian\source\repos\calculator\calculator\obj\Debug\net6.0\calculator.csproj.AssemblyReference.cache
+C:\Users\Adrian\source\repos\calculator\calculator\obj\Debug\net6.0\calculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Adrian\source\repos\calculator\calculator\obj\Debug\net6.0\calculator.AssemblyInfoInputs.cache
+C:\Users\Adrian\source\repos\calculator\calculator\obj\Debug\net6.0\calculator.AssemblyInfo.cs
+C:\Users\Adrian\source\repos\calculator\calculator\obj\Debug\net6.0\calculator.csproj.CoreCompileInputs.cache
+C:\Users\Adrian\source\repos\calculator\calculator\obj\Debug\net6.0\calculator.dll
+C:\Users\Adrian\source\repos\calculator\calculator\obj\Debug\net6.0\refint\calculator.dll
+C:\Users\Adrian\source\repos\calculator\calculator\obj\Debug\net6.0\calculator.pdb
+C:\Users\Adrian\source\repos\calculator\calculator\obj\Debug\net6.0\calculator.genruntimeconfig.cache
+C:\Users\Adrian\source\repos\calculator\calculator\obj\Debug\net6.0\ref\calculator.dll
