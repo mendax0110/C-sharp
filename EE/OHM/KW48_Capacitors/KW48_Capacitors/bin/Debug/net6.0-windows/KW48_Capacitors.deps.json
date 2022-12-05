@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "KW48_Capacitors/1.0.0": {
+        "runtime": {
+          "KW48_Capacitors.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "KW48_Capacitors/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

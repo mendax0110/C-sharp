@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Symbol_Capacitor_%28common,_horizontal%29.svg.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Symbol_Capacitor_(common,_horizontal).svg.png" />
+  </ItemGroup>
+
+</Project>

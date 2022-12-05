@@ -1,0 +1,32 @@
+﻿<Window x:Class="CapacitorCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CapacitorCalculator"
+        mc:Ignorable="d"
+        Title="Capacitor Calculator" Height="377" Width="679">
+    <Grid Margin="0,0,10,128">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Content="Plate area (m²):"/>
+        <TextBox x:Name="PlateAreaTextBox" Grid.Row="0" Grid.Column="1"/>
+        <Label Grid.Row="1" Grid.Column="0" Content="Plate separation (m):"/>
+        <TextBox x:Name="PlateSeparationTextBox" Grid.Row="1" Grid.Column="1"/>
+        <Label Grid.Row="2" Grid.Column="0" Content="Permittivity:"/>
+        <TextBox x:Name="PermittivityTextBox" Grid.Row="2" Grid.Column="1"/>
+
+        <Button x:Name="CalculateButton" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Content="Calculate" Click="CalculateButton_Click" Margin="0,0,0,186"/>
+        <TextBlock x:Name="CapacitanceTextBlock" Grid.Row="3" Grid.Column="1" Margin="207,58,85,85"/>
+        <Image Grid.Column="1" HorizontalAlignment="Left" Height="83" Margin="64,48,0,0" Grid.Row="3" VerticalAlignment="Top" Width="106" Source="/Symbol_Capacitor_(common,_horizontal).svg.png"/>
+    </Grid>
+</Window>
