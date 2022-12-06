@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resistor_symbol_IEC.svg.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resistor_symbol_IEC.svg.png" />
+  </ItemGroup>
+
+</Project>
