@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "CapCurveSim/1.0.0": {
+        "runtime": {
+          "CapCurveSim.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CapCurveSim/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
