@@ -1,0 +1,13 @@
+﻿<Window x:Class="RCFilterCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="RC Filter Calculator" Height="250" Width="300">
+    <Grid>
+        <Label Content="Resistance (Ohms):" Grid.Row="0" Grid.Column="0" />
+        <TextBox x:Name="resistanceTextBox" Grid.Row="0" Margin="150,44,0,152" />
+        <Label Content="Capacitance (Farads):" Grid.Column="0" Margin="0,44,150,136" />
+        <TextBox x:Name="capacitanceTextBox" Margin="150,0,0,195" />
+        <Button x:Name="calculateButton" Content="Calculate"
+                Click="calculateButton_Click" Margin="174,117,24,35" />
+    </Grid>
+</Window>
