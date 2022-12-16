@@ -30,7 +30,7 @@ namespace CapacitorCalculator
             double c1 = double.Parse(Capacitance1.Text);
             double c2 = double.Parse(Capacitance2.Text);
 
-            // Calculate the total capacitance for a series configuration
+            // Calculate the total capacitance for a parallel configuration
             double cTotal = c1 + c2;
 
             // Display the total capacitance in the text box
@@ -44,9 +44,8 @@ namespace CapacitorCalculator
             double c1 = double.Parse(Capacitance1.Text);
             double c2 = double.Parse(Capacitance2.Text);
 
-            // Calculate the total capacitance for a parallel configuration
-            double cTotal = c1 + c2;
-            cTotal = 1 / cTotal;
+            // Calculate the total capacitance for a series configuration
+            double cTotal = (c1 * c2) / (c1 + c2);
 
             // Display the total capacitance in the text box
             TotalCapacitance.Text = cTotal.ToString();
