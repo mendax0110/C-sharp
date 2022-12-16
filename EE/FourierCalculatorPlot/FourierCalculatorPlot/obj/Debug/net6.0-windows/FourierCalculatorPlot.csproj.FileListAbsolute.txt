@@ -1,0 +1,29 @@
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\FourierCalculatorPlot\FourierCalculatorPlot\obj\Debug\net6.0-windows\FourierCalculatorPlot.csproj.AssemblyReference.cache
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\FourierCalculatorPlot\FourierCalculatorPlot\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\FourierCalculatorPlot\FourierCalculatorPlot\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\FourierCalculatorPlot\FourierCalculatorPlot\obj\Debug\net6.0-windows\FourierCalculatorPlot_MarkupCompile.cache
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\FourierCalculatorPlot\FourierCalculatorPlot\obj\Debug\net6.0-windows\FourierCalculatorPlot_MarkupCompile.lref
+C:\Users\Adrian\Downloads\FourierCalculatorPlot\FourierCalculatorPlot\bin\Debug\net6.0-windows\FourierCalculatorPlot.exe
+C:\Users\Adrian\Downloads\FourierCalculatorPlot\FourierCalculatorPlot\bin\Debug\net6.0-windows\FourierCalculatorPlot.deps.json
+C:\Users\Adrian\Downloads\FourierCalculatorPlot\FourierCalculatorPlot\bin\Debug\net6.0-windows\FourierCalculatorPlot.runtimeconfig.json
+C:\Users\Adrian\Downloads\FourierCalculatorPlot\FourierCalculatorPlot\bin\Debug\net6.0-windows\FourierCalculatorPlot.dll
+C:\Users\Adrian\Downloads\FourierCalculatorPlot\FourierCalculatorPlot\bin\Debug\net6.0-windows\FourierCalculatorPlot.pdb
+C:\Users\Adrian\Downloads\FourierCalculatorPlot\FourierCalculatorPlot\bin\Debug\net6.0-windows\OxyPlot.dll
+C:\Users\Adrian\Downloads\FourierCalculatorPlot\FourierCalculatorPlot\bin\Debug\net6.0-windows\OxyPlot.Wpf.dll
+C:\Users\Adrian\Downloads\FourierCalculatorPlot\FourierCalculatorPlot\bin\Debug\net6.0-windows\OxyPlot.Wpf.Shared.dll
+C:\Users\Adrian\Downloads\FourierCalculatorPlot\FourierCalculatorPlot\obj\Debug\net6.0-windows\FourierCalculatorPlot.csproj.AssemblyReference.cache
+C:\Users\Adrian\Downloads\FourierCalculatorPlot\FourierCalculatorPlot\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Adrian\Downloads\FourierCalculatorPlot\FourierCalculatorPlot\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Adrian\Downloads\FourierCalculatorPlot\FourierCalculatorPlot\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Adrian\Downloads\FourierCalculatorPlot\FourierCalculatorPlot\obj\Debug\net6.0-windows\FourierCalculatorPlot_MarkupCompile.cache
+C:\Users\Adrian\Downloads\FourierCalculatorPlot\FourierCalculatorPlot\obj\Debug\net6.0-windows\FourierCalculatorPlot.g.resources
+C:\Users\Adrian\Downloads\FourierCalculatorPlot\FourierCalculatorPlot\obj\Debug\net6.0-windows\FourierCalculatorPlot.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Adrian\Downloads\FourierCalculatorPlot\FourierCalculatorPlot\obj\Debug\net6.0-windows\FourierCalculatorPlot.AssemblyInfoInputs.cache
+C:\Users\Adrian\Downloads\FourierCalculatorPlot\FourierCalculatorPlot\obj\Debug\net6.0-windows\FourierCalculatorPlot.AssemblyInfo.cs
+C:\Users\Adrian\Downloads\FourierCalculatorPlot\FourierCalculatorPlot\obj\Debug\net6.0-windows\FourierCalculatorPlot.csproj.CoreCompileInputs.cache
+C:\Users\Adrian\Downloads\FourierCalculatorPlot\FourierCalculatorPlot\obj\Debug\net6.0-windows\FourierCalculatorPlot.csproj.CopyComplete
+C:\Users\Adrian\Downloads\FourierCalculatorPlot\FourierCalculatorPlot\obj\Debug\net6.0-windows\FourierCalculatorPlot.dll
+C:\Users\Adrian\Downloads\FourierCalculatorPlot\FourierCalculatorPlot\obj\Debug\net6.0-windows\refint\FourierCalculatorPlot.dll
+C:\Users\Adrian\Downloads\FourierCalculatorPlot\FourierCalculatorPlot\obj\Debug\net6.0-windows\FourierCalculatorPlot.pdb
+C:\Users\Adrian\Downloads\FourierCalculatorPlot\FourierCalculatorPlot\obj\Debug\net6.0-windows\FourierCalculatorPlot.genruntimeconfig.cache
+C:\Users\Adrian\Downloads\FourierCalculatorPlot\FourierCalculatorPlot\obj\Debug\net6.0-windows\ref\FourierCalculatorPlot.dll
