@@ -1,0 +1,9 @@
+﻿<Window x:Class="WpfSerialExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Serial MEGACARD" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="textBox1" Margin="10,10,10,105" AcceptsReturn="True" VerticalScrollBarVisibility="Visible" />
+        <Button x:Name="button1" Content="Start" Click="Button1_Click" Margin="253,347,253,10" />
+    </Grid>
+</Window>
