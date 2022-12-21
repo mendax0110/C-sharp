@@ -26,6 +26,7 @@ namespace FusionSimulator
         {
             InitializeComponent();
             SeriesCollection = new SeriesCollection();
+            DataContext = this;  // Set the DataContext to the MainWindow instance
         }
 
         private void SimulateButton_Click(object sender, RoutedEventArgs e)
@@ -48,6 +49,7 @@ namespace FusionSimulator
             }
 
             // Create a FusionSimulation object and call its Simulate method
+            SeriesCollection.Clear();
             FusionSimulation simulation = new FusionSimulation(fuelType, fuelAmount, temperature, pressure);
             List<double> results = simulation.Simulate();
             if (results == null || results.Count == 0)
@@ -56,13 +58,13 @@ namespace FusionSimulator
                 return;
             }
 
-            // Update the SeriesCollection with the simulation results
-            SeriesCollection.Clear();
+            // Add the simulation results to the SeriesCollection
             SeriesCollection.Add(new LineSeries
             {
                 Title = "Energy Output (J)",
                 Values = new ChartValues<double>(results)
             });
+
         }
     }
 }
