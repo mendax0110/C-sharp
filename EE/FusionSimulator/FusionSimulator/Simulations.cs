@@ -10,15 +10,21 @@ namespace FusionSimulator.Simulations
     {
         private readonly string _fuelType;
         private readonly double _fuelAmount;
+        private readonly double _plasmaDensity;
+        private readonly double _ionSpecies;
         private readonly double _temperature;
         private readonly double _pressure;
+        private readonly double _plasmaLosses;
 
-        public FusionSimulation(string fuelType, double fuelAmount, double temperature, double pressure)
+        public FusionSimulation(string fuelType, double fuelAmount, double plasmaDensity, double ionSpecies, double temperature, double pressure, double plasmaLosses)
         {
             _fuelType = fuelType;
             _fuelAmount = fuelAmount;
+            _plasmaDensity = plasmaDensity;
+            _ionSpecies = ionSpecies;
             _temperature = temperature;
             _pressure = pressure;
+            _plasmaLosses = plasmaLosses;
         }
 
         public List<double> Simulate()
@@ -26,12 +32,8 @@ namespace FusionSimulator.Simulations
             // Perform the fusion simulation and return the results
             List<double> results = new List<double>();
 
-            // Here you can add the code to perform the fusion simulation using the input parameters (_fuelType, _fuelAmount, _temperature, _pressure)
-            // The simulation could involve calculations, data processing, and/or interacting with other systems or resources
-            // For the purposes of this example, we will assume that the fusion simulation involves calculating the energy produced by the fusion reaction at different points in time
-
             // Check that the input values are valid
-            if (_fuelAmount <= 0 || _temperature <= 0 || _pressure <= 0)
+            if (_fuelAmount <= 0 || _plasmaDensity <= 0 || _ionSpecies <= 0 || _temperature <= 0 || _pressure <= 0 || _plasmaLosses < 0)
             {
                 return results;  // Return an empty list if any of the input values is invalid
             }
@@ -42,12 +44,14 @@ namespace FusionSimulator.Simulations
                 if (_fuelType == "deuterium-tritium")
                 {
                     // Use the deuterium-tritium fusion reaction to calculate the energy produced at each time step
-                    energy = _fuelAmount * 17.6 * Math.Pow(10, 6);  // energy in joules
+                    double fusionPower = _fuelAmount * _plasmaDensity * _ionSpecies * _temperature * Math.Pow(10, -20) * Math.Exp(-1.44 / _temperature);  // fusion power in watts
+                    energy = fusionPower * 3600;  // energy in joules
                 }
                 else if (_fuelType == "deuterium-deuterium")
                 {
                     // Use the deuterium-deuterium fusion reaction to calculate the energy produced at each time step
-                    energy = _fuelAmount * 4.0 * Math.Pow(10, 6);  // energy in joules
+                    double fusionPower = _fuelAmount * _plasmaDensity * _ionSpecies * _temperature * Math.Pow(10, -20) * Math.Exp(-1.44 / _temperature);  // fusion power in watts
+                    energy = fusionPower * 3600;  // energy in joules
                 }
                 else
                 {
@@ -55,8 +59,9 @@ namespace FusionSimulator.Simulations
                     energy = 0;
                 }
 
-                // Add some random variation to the energy produced at each time step
-                energy += energy * (0.1 - 0.2 * new Random().NextDouble());
+                // random offset in joules
+                double randomOffset = new Random().NextDouble() * 1000;
+                energy += randomOffset;
 
                 results.Add(energy);  // Add the energy produced at each time step to the results list
             }

@@ -31,26 +31,48 @@ namespace FusionSimulator
 
         private void SimulateButton_Click(object sender, RoutedEventArgs e)
         {
-            // Get the user input values
+            // Create a FusionSimulation object and call its Simulate method
+            SeriesCollection.Clear();
+
             string fuelType = fuelComboBox.Text;
-            double fuelAmount = 0;
-            double temperature = 0;
-            double pressure = 0;
-            try
+            double fuelAmount;
+            if (!double.TryParse(fuelAmountTextBox.Text, out fuelAmount) || fuelAmount <= 0)
             {
-                fuelAmount = double.Parse(fuelAmountTextBox.Text);
-                temperature = double.Parse(temperatureTextBox.Text);
-                pressure = double.Parse(pressureTextBox.Text);
+                MessageBox.Show("Invalid fuel amount");
+                return;
             }
-            catch (Exception)
+            double plasmaDensity;
+            if (!double.TryParse(plasmaDensityTextBox.Text, out plasmaDensity) || plasmaDensity <= 0)
             {
-                MessageBox.Show("Invalid input values");
+                MessageBox.Show("Invalid plasma density");
+                return;
+            }
+            double ionSpecies;
+            if (!double.TryParse(ionSpeciesTextBox.Text, out ionSpecies) || ionSpecies <= 0)
+            {
+                MessageBox.Show("Invalid ion species");
+                return;
+            }
+            double temperature;
+            if (!double.TryParse(temperatureTextBox.Text, out temperature) || temperature <= 0)
+            {
+                MessageBox.Show("Invalid temperature");
+                return;
+            }
+            double pressure;
+            if (!double.TryParse(pressureTextBox.Text, out pressure) || pressure <= 0)
+            {
+                MessageBox.Show("Invalid pressure");
+                return;
+            }
+            double plasmaLosses;
+            if (!double.TryParse(plasmaLossesTextBox.Text, out plasmaLosses) || plasmaLosses < 0)
+            {
+                MessageBox.Show("Invalid plasma losses");
                 return;
             }
 
-            // Create a FusionSimulation object and call its Simulate method
-            SeriesCollection.Clear();
-            FusionSimulation simulation = new FusionSimulation(fuelType, fuelAmount, temperature, pressure);
+            FusionSimulation simulation = new FusionSimulation(fuelType, fuelAmount, plasmaDensity, ionSpecies, temperature, pressure, plasmaLosses);
             List<double> results = simulation.Simulate();
             if (results == null || results.Count == 0)
             {
@@ -64,7 +86,6 @@ namespace FusionSimulator
                 Title = "Energy Output (J)",
                 Values = new ChartValues<double>(results)
             });
-
         }
     }
 }
