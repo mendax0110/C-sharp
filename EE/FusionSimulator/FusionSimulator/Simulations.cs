@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// Fusion Reactor Simualtor Simualtions, Calculations
 namespace FusionSimulator.Simulations
 {
     public class FusionSimulation

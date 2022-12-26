@@ -16,6 +16,7 @@ using LiveCharts;
 using LiveCharts.Wpf;
 using FusionSimulator.Simulations;
 
+// Fusion Reactor Simulator
 namespace FusionSimulator
 {
     public partial class MainWindow : Window
