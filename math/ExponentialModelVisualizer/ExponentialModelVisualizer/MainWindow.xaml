@@ -1,0 +1,25 @@
+﻿<Window x:Class="ExponentialModelVisualizer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:oxy="http://oxyplot.org/wpf"
+        Title="Exponential Model Visualizer" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Margin="5">
+            <TextBlock Text="X values (comma-separated):"/>
+            <TextBox x:Name="txtXValues" Width="200"/>
+            <TextBlock Text="Y values (comma-separated):"/>
+            <TextBox x:Name="txtYValues" Width="200"/>
+            <Button x:Name="btnVisualize" Content="Visualize" Click="btnVisualize_Click"/>
+        </StackPanel>
+        <oxy:Plot x:Name="plot" Grid.Row="1" Margin="5" Title="Exponential Model">
+            <oxy:Plot.Series>
+                <oxy:LineSeries Title="Exponential curve"/>
+                <oxy:ScatterSeries Title="Data points"/>
+            </oxy:Plot.Series>
+        </oxy:Plot>
+    </Grid>
+</Window>
