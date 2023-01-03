@@ -1,0 +1,26 @@
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\RCFilter\RCFilter\obj\Debug\net6.0-windows\RCFilter.csproj.AssemblyReference.cache
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\RCFilter\RCFilter\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\RCFilter\RCFilter\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\RCFilter\RCFilter\obj\Debug\net6.0-windows\RCFilter_MarkupCompile.cache
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\RCFilter\RCFilter\obj\Debug\net6.0-windows\RCFilter_MarkupCompile.lref
+C:\Users\Adrian\Downloads\RCFilter\RCFilter\obj\Debug\net6.0-windows\RCFilter.csproj.AssemblyReference.cache
+C:\Users\Adrian\Downloads\RCFilter\RCFilter\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Adrian\Downloads\RCFilter\RCFilter\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Adrian\Downloads\RCFilter\RCFilter\obj\Debug\net6.0-windows\RCFilter_MarkupCompile.cache
+C:\Users\Adrian\Downloads\RCFilter\RCFilter\obj\Debug\net6.0-windows\RCFilter_MarkupCompile.lref
+C:\Users\Adrian\Downloads\RCFilter\RCFilter\bin\Debug\net6.0-windows\RCFilter.exe
+C:\Users\Adrian\Downloads\RCFilter\RCFilter\bin\Debug\net6.0-windows\RCFilter.deps.json
+C:\Users\Adrian\Downloads\RCFilter\RCFilter\bin\Debug\net6.0-windows\RCFilter.runtimeconfig.json
+C:\Users\Adrian\Downloads\RCFilter\RCFilter\bin\Debug\net6.0-windows\RCFilter.dll
+C:\Users\Adrian\Downloads\RCFilter\RCFilter\bin\Debug\net6.0-windows\RCFilter.pdb
+C:\Users\Adrian\Downloads\RCFilter\RCFilter\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Adrian\Downloads\RCFilter\RCFilter\obj\Debug\net6.0-windows\RCFilter.g.resources
+C:\Users\Adrian\Downloads\RCFilter\RCFilter\obj\Debug\net6.0-windows\RCFilter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Adrian\Downloads\RCFilter\RCFilter\obj\Debug\net6.0-windows\RCFilter.AssemblyInfoInputs.cache
+C:\Users\Adrian\Downloads\RCFilter\RCFilter\obj\Debug\net6.0-windows\RCFilter.AssemblyInfo.cs
+C:\Users\Adrian\Downloads\RCFilter\RCFilter\obj\Debug\net6.0-windows\RCFilter.csproj.CoreCompileInputs.cache
+C:\Users\Adrian\Downloads\RCFilter\RCFilter\obj\Debug\net6.0-windows\RCFilter.dll
+C:\Users\Adrian\Downloads\RCFilter\RCFilter\obj\Debug\net6.0-windows\refint\RCFilter.dll
+C:\Users\Adrian\Downloads\RCFilter\RCFilter\obj\Debug\net6.0-windows\RCFilter.pdb
+C:\Users\Adrian\Downloads\RCFilter\RCFilter\obj\Debug\net6.0-windows\RCFilter.genruntimeconfig.cache
+C:\Users\Adrian\Downloads\RCFilter\RCFilter\obj\Debug\net6.0-windows\ref\RCFilter.dll
