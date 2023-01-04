@@ -1,0 +1,22 @@
+﻿<Window x:Class="ShiftRegister.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ShiftRegister"
+        mc:Ignorable="d"
+        Title="Shift Register Simulator" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="registerListBox" Grid.Column="0" Margin="0,0,257,0" />
+        <StackPanel Grid.Column="1" Orientation="Vertical" Margin="10">
+            <Button x:Name="shiftLeftButton" Content="Shift Left" Click="ShiftLeftButton_Click" />
+            <Button x:Name="shiftRightButton" Content="Shift Right" Click="ShiftRightButton_Click" />
+            <TextBox x:Name="inputTextBox" />
+        </StackPanel>
+        <Image HorizontalAlignment="Left" Height="193" Margin="209,0,0,0" VerticalAlignment="Center" Width="187" Source="/74HC595-shift-register-pinout.png"/>
+    </Grid>
+</Window>
