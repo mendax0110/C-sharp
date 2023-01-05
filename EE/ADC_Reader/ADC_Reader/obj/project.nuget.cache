@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "UlsZkAK5JAW12tKLtFL1bSuAHARwwY2xNRfPd/ADpsgUsoy34sgMJniFku3SyOqIcEhZp3v6DnNOCGVyp7Eb5A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Adrian\\OneDrive - HTL-Rankweil\\HTL-Aufbaulehrgang\\2.Semester\\Fächer\\FSST\\01_programmentwurf_programme_cs\\ADC_Reader\\ADC_Reader\\ADC_Reader.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Adrian\\.nuget\\packages\\armku.communication\\0.1.2020.211\\armku.communication.0.1.2020.211.nupkg.sha512",
+    "C:\\Users\\Adrian\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\Adrian\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\Adrian\\.nuget\\packages\\runtime.linux-arm.runtime.native.system.io.ports\\4.7.0\\runtime.linux-arm.runtime.native.system.io.ports.4.7.0.nupkg.sha512",
+    "C:\\Users\\Adrian\\.nuget\\packages\\runtime.linux-arm64.runtime.native.system.io.ports\\4.7.0\\runtime.linux-arm64.runtime.native.system.io.ports.4.7.0.nupkg.sha512",
+    "C:\\Users\\Adrian\\.nuget\\packages\\runtime.linux-x64.runtime.native.system.io.ports\\4.7.0\\runtime.linux-x64.runtime.native.system.io.ports.4.7.0.nupkg.sha512",
+    "C:\\Users\\Adrian\\.nuget\\packages\\runtime.native.system.io.ports\\4.7.0\\runtime.native.system.io.ports.4.7.0.nupkg.sha512",
+    "C:\\Users\\Adrian\\.nuget\\packages\\runtime.osx-x64.runtime.native.system.io.ports\\4.7.0\\runtime.osx-x64.runtime.native.system.io.ports.4.7.0.nupkg.sha512",
+    "C:\\Users\\Adrian\\.nuget\\packages\\system.io.ports\\4.7.0\\system.io.ports.4.7.0.nupkg.sha512",
+    "C:\\Users\\Adrian\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\Adrian\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

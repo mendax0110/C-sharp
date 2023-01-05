@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ATMEGA16A.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Armku.Communication" Version="0.1.2020.211" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="ATMEGA16A.png" />
+  </ItemGroup>
+
+</Project>
