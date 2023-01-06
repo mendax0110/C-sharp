@@ -1,0 +1,22 @@
+﻿<Window x:Class="UnitCircleSineWave.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UnitCircleSineWave"
+        mc:Ignorable="d"
+        Title="Unit Circle Sine Wave" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Canvas Name="unitCircleCanvas" Background="White" MouseMove="UnitCircleCanvas_MouseMove">
+            <Ellipse Width="100" Height="100" Stroke="Black" StrokeThickness="1" Canvas.Left="350" Canvas.Top="200"/>
+            <Line Name="pointerLine" X1="400" Y1="250" X2="400" Y2="200" Stroke="Black" StrokeThickness="2" RenderTransformOrigin="0.5,0"/>
+        </Canvas>
+        <Canvas Name="graphCanvas" Grid.Row="1" Background="White">
+            <Polyline Name="sineWavePolyline" Stroke="Red" StrokeThickness="2"/>
+        </Canvas>
+    </Grid>
+</Window>
