@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "5JYh9dSyd7ouojWRd5ov6HiIGMletO201c032YzX1gOlX68ynUIh2yazSyuf1NjqHRSbhrlxpr1yuDW+E3pNKA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Adrian\\OneDrive - HTL-Rankweil\\HTL-Aufbaulehrgang\\2.Semester\\Fächer\\FSST\\01_programmentwurf_programme_cs\\LogGraph\\LogGraph\\LogGraph.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Adrian\\.nuget\\packages\\oxyplot.core\\2.1.2\\oxyplot.core.2.1.2.nupkg.sha512",
+    "C:\\Users\\Adrian\\.nuget\\packages\\oxyplot.wpf\\2.1.2\\oxyplot.wpf.2.1.2.nupkg.sha512",
+    "C:\\Users\\Adrian\\.nuget\\packages\\oxyplot.wpf.shared\\2.1.2\\oxyplot.wpf.shared.2.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
