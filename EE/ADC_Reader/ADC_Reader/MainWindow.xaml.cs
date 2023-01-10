@@ -24,13 +24,16 @@ namespace ADC_Reader
         SerialPort serialPort;
         string receivedData;
 
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
         public MainWindow()
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
         {
             InitializeComponent();
             serialPort = new SerialPort();
             serialPort.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
         }
 
+        // Connection Button
         private void ConnectButton_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -48,6 +51,7 @@ namespace ADC_Reader
             }
         }
 
+        // Disconnection Button
         private void DisconnectButton_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -63,6 +67,7 @@ namespace ADC_Reader
             }
         }
 
+        // Handler to Receive Data
         private void DataReceivedHandler(object sender, SerialDataReceivedEventArgs e)
         {
             SerialPort sp = (SerialPort)sender;
@@ -73,6 +78,7 @@ namespace ADC_Reader
             });
         }
 
+        // Request Button 
         private void RequestButton_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -85,6 +91,7 @@ namespace ADC_Reader
             }
         }
 
+        // Menue to select the Measurment Item
         private void MeasurementMenuItem_Click(object sender, RoutedEventArgs e)
         {
             MenuItem menuItem = (MenuItem)sender;
