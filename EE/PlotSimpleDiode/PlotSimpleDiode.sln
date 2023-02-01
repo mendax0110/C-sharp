@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32811.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlotSimpleDiode", "PlotSimpleDiode\PlotSimpleDiode.csproj", "{BE458E23-ADC4-4978-B1C7-437BAB9542CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE458E23-ADC4-4978-B1C7-437BAB9542CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE458E23-ADC4-4978-B1C7-437BAB9542CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE458E23-ADC4-4978-B1C7-437BAB9542CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE458E23-ADC4-4978-B1C7-437BAB9542CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B612FDF3-2078-40CA-9939-A3431DCDDC39}
+	EndGlobalSection
+EndGlobal
