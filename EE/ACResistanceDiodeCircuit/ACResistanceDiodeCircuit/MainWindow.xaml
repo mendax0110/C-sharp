@@ -1,0 +1,28 @@
+﻿<Window x:Class="ACResistanceDiodeCircuit.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:oxy="http://oxyplot.org/wpf"
+        Title="AC Resistance Diode Circuit" Height="524" Width="862">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Content="Diode Voltage Drop (Vd):"/>
+        <TextBox Grid.Row="0" x:Name="DiodeVoltageDropTextBox" Margin="162,0,0,26" Grid.RowSpan="2"/>
+
+        <Label Grid.Row="1" Content="Resistor Value (R):"/>
+        <TextBox Grid.Row="1" x:Name="ResistorValueTextBox" Margin="162,0,0,20" Grid.RowSpan="2"/>
+
+        <Button Grid.Row="2" Content="Calculate" Click="Calculate_Click"/>
+
+        <Label Grid.Row="3" Content="Circuit Resistance (Rc):"/>
+        <TextBlock Grid.Row="3" x:Name="CircuitResistanceTextBlock" Margin="162,0,0,410" Grid.RowSpan="2"/>
+       
+        <oxy:Plot Grid.Row="4" x:Name="Plot" Margin="42,30,42,30" />
+    </Grid>
+</Window>
