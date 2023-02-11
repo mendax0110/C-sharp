@@ -1,0 +1,43 @@
+﻿<Window x:Class="BipolarTransistor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Bipolar Transistor Curve Calculator" Height="508" Width="872">
+    <Grid Margin="0,0,436,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto" MinHeight="0"/>
+            <RowDefinition Height="Auto" MinHeight="47.96"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" MinWidth="121.373"/>
+            <ColumnDefinition Width="Auto" MinWidth="99"/>
+            <ColumnDefinition Width="Auto" MinWidth="111"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Column="0" Margin="5,0,5,0" VerticalAlignment="Center" Height="16">Collector Current (A):</TextBlock>
+        <TextBox x:Name="CollectorCurrentTextBox" Grid.Row="0" Grid.Column="1" Margin="5,5,5,5"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="0" Margin="5,0,5,0" VerticalAlignment="Center" Height="16">Base Current (A):</TextBlock>
+        <TextBox x:Name="BaseCurrentTextBox" Grid.Row="1" Grid.Column="1" Margin="5,5,5,5"/>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="5,5,5,5">
+            <RadioButton x:Name="NPNRadioButton" Margin="5" GroupName="TransistorType" Content="NPN"/>
+            <RadioButton x:Name="PNPRadioButton" Margin="5" GroupName="TransistorType" Content="PNP"/>
+        </StackPanel>
+
+        <Button x:Name="CalculateButton" Grid.Row="5" Margin="9,54,11,260" Content="Calculate" Click="CalculateButton_Click"/>
+
+        <TextBlock Grid.Row="4" Grid.Column="0" Margin="5,5,5,0" VerticalAlignment="Top" Height="16">Collector Voltage (V):</TextBlock>
+        <TextBox x:Name="CollectorVoltageTextBox" Grid.Row="4" Grid.Column="1" Margin="5,5,5,25" IsReadOnly="True"/>
+
+        <TextBlock Grid.Row="5" Grid.Column="0" Margin="10,5,0,0" VerticalAlignment="Top" Height="16" RenderTransformOrigin="0.125,0.835">Base Voltage (V):</TextBlock>
+        <TextBox x:Name="BaseVoltageTextBox" Grid.Row="5" Grid.Column="1" Margin="5,5,5,315" IsReadOnly="True"/>
+
+        <Canvas Grid.Row="0" Grid.RowSpan="6" Grid.Column="2" Margin="5,5,5,5">
+            <!-- Placeholder for graph of input and output curves -->
+        </Canvas>
+    </Grid>
+</Window>
