@@ -1,0 +1,30 @@
+﻿<Window x:Class="StabilizationCircuit.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:oxy="http://oxyplot.org/wpf"
+        Title="Stabilization Circuit" Height="424" Width="570">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Content="R1 (ohms):" />
+        <TextBox Grid.Row="0" Grid.Column="1" Name="R1TextBox" />
+        <Label Grid.Row="1" Grid.Column="0" Content="Vcc (volts):" />
+        <TextBox Grid.Row="1" Grid.Column="1" Name="VccTextBox" />
+        <Button Grid.Row="2" Grid.Column="1" Content="Update Stabilization Curve" Click="UpdateStabilizationCurveButton_Click" Margin="129,10,195,0" Height="25" VerticalAlignment="Top" />
+        <oxy:Plot Grid.Row="2" Grid.ColumnSpan="2" Name="StabilizationPlot" Margin="0,70,0,10">
+            <oxy:Plot.Title>Stabilization Curve</oxy:Plot.Title>
+            <oxy:Plot.Axes>
+                <oxy:LinearAxis Position="Bottom" Title="IC (mA)" />
+                <oxy:LinearAxis Position="Left" Title="VCE (volts)" />
+            </oxy:Plot.Axes>
+            <oxy:LineSeries ItemsSource="{Binding StabilizationData}" DataFieldX="IC" DataFieldY="VCE" />
+        </oxy:Plot>
+    </Grid>
+</Window>
