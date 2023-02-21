@@ -1,0 +1,31 @@
+﻿<Window x:Class="VoltageDivBiTransistor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:oxy="http://oxyplot.org/wpf"
+        Title="Voltage Divider with Bipolar Transistor" Height="450" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10">
+            <TextBlock Text="Voltage (V):" VerticalAlignment="Center" Margin="0,0,10,0"/>
+            <TextBox x:Name="VoltageInput" Width="50" VerticalAlignment="Center" Margin="0,0,10,0"/>
+            <TextBlock Text="Resistor 1 (Ω):" VerticalAlignment="Center" Margin="0,0,10,0"/>
+            <TextBox x:Name="Resistor1Input" Width="50" VerticalAlignment="Center" Margin="0,0,10,0"/>
+            <TextBlock Text="Resistor 2 (Ω):" VerticalAlignment="Center" Margin="0,0,10,0"/>
+            <TextBox x:Name="Resistor2Input" Width="50" VerticalAlignment="Center" Margin="0,0,10,0"/>
+            <TextBlock Text="Beta (β):" VerticalAlignment="Center" Margin="0,0,10,0"/>
+            <TextBox x:Name="BetaInput" Width="50" VerticalAlignment="Center"/>
+            <Button x:Name="CalculateButton" Content="Calculate" Click="CalculateButton_Click" Margin="10,0"/>
+        </StackPanel>
+        <oxy:Plot Grid.Row="1" Margin="10">
+            <oxy:LineSeries ItemsSource="{Binding VoltageDividerPoints}" DataFieldX="X" DataFieldY="Y" Title="Voltage Divider" />
+            <oxy:LineSeries ItemsSource="{Binding BipolarTransistorPoints}" DataFieldX="X" DataFieldY="Y" Title="Bipolar Transistor" />
+            <oxy:Plot.Axes>
+                <oxy:LinearAxis Position="Bottom" Title="Time (s)" />
+                <oxy:LinearAxis Position="Left" Title="Voltage (V)" />
+            </oxy:Plot.Axes>
+        </oxy:Plot>
+    </Grid>
+</Window>
