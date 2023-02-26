@@ -1,0 +1,26 @@
+﻿<Window x:Class="EmitterCircuitPlotter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:oxy="http://oxyplot.org/wpf"
+        Title="Emitter Circuit Plotter" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Margin="10">
+            <TextBlock Text="Amplitude:" VerticalAlignment="Center" Margin="0 0 10 0"/>
+            <TextBox x:Name="AmplitudeTextBox" Text="1" Width="100" Margin="0 0 20 0"/>
+            <TextBlock Text="Frequency:" VerticalAlignment="Center" Margin="0 0 10 0"/>
+            <TextBox x:Name="FrequencyTextBox" Text="1" Width="100"/>
+            <TextBlock Text="Beta:" VerticalAlignment="Center" Margin="0 0 10 0"/>
+            <TextBox x:Name="BetaTextBox" Text="1" Width="100"/>
+            <TextBlock Text="RC:" VerticalAlignment="Center" Margin="0 0 10 0"/>
+            <TextBox x:Name="RCTextBox" Text="1" Width="100"/>
+            <Button Content="Plot" Margin="20 0 0 0" Click="OnPlotButtonClicked"/>
+        </StackPanel>
+
+        <oxy:PlotView x:Name="PlotControl" Grid.Row="1" Margin="10"/>
+    </Grid>
+</Window>
