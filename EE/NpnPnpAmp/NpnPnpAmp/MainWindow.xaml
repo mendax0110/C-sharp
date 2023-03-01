@@ -1,0 +1,34 @@
+﻿<Window x:Class="NpnPnpAmp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:oxy="http://oxyplot.org/wpf"
+        Title="Transistor Amplifier" Height="400" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Content="Transistor Type:" />
+        <ComboBox Grid.Row="0" Grid.Column="1" Width="120" ItemsSource="{Binding TransistorTypes}" SelectedItem="{Binding TransistorType}" Margin="5">
+
+            <ComboBoxItem>NPN</ComboBoxItem>
+            <ComboBoxItem>PNP</ComboBoxItem>
+        </ComboBox>
+
+        <Label Grid.Row="1" Grid.Column="0" Content="Input Voltage (V):" />
+        <TextBox Grid.Row="1" Grid.Column="1" Width="120" Text="{Binding InputVoltage, Mode=TwoWay}" Margin="5" />
+
+        <Button Grid.Row="2" Grid.Column="0" Content="Generate" Click="OnGenerateButtonClicked" Margin="5" />
+
+        <oxy:PlotView Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Margin="10" Model="{Binding PlotModel}" />
+
+    </Grid>
+</Window>
