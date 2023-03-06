@@ -1,0 +1,48 @@
+﻿<Window x:Class="EmitterCircuitCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:oxy="http://oxyplot.org/wpf"
+        Title="Emitter Circuit Calculator" Height="571" Width="722">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto" MinWidth="144"/>
+            <ColumnDefinition Width="Auto" MinWidth="0"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Content="Collector Voltage (V):" Margin="5,5,5,5" Height="NaN" Width="NaN"/>
+        <TextBox Grid.Row="0" Grid.Column="1" x:Name="collectorVoltageTextBox" Margin="5,5,5,5" Height="NaN" Width="NaN"/>
+        <Label Grid.Row="1" Grid.Column="0" Content="Base Voltage (V):" Margin="5,5,5,5" Height="NaN" Width="NaN"/>
+        <TextBox Grid.Row="1" Grid.Column="1" x:Name="baseVoltageTextBox" Margin="5,5,5,5" Height="NaN" Width="NaN"/>
+        <Label Grid.Row="2" Grid.Column="0" Content="Emitter Resistor (Ω):" Margin="5,5,5,5" Height="NaN" Width="NaN"/>
+        <TextBox Grid.Row="2" Grid.Column="1" x:Name="emitterResistorTextBox" Margin="5,5,5,5" Height="NaN" Width="NaN"/>
+        <Button Grid.Row="3" Grid.Column="0" x:Name="calculateButton" Content="Calculate" Click="calculateButton_Click" Margin="5,5,10,5" Height="NaN" Width="NaN"/>
+        <Label Grid.Row="4" Grid.Column="0" Content="Emitter Voltage (V):" Margin="5,5,5,5" Height="NaN" Width="NaN"/>
+        <TextBlock Grid.Row="4" Grid.Column="1" x:Name="emitterVoltageTextBlock" Margin="5,5,5,5" Height="NaN" Width="NaN"/>
+        <Label Grid.Row="5" Grid.Column="0" Content="Collector Current (A):" Margin="5,5,5,5" Height="NaN" Width="NaN"/>
+        <TextBlock Grid.Row="5" Grid.Column="1" x:Name="collectorCurrentTextBlock" Margin="5,5,5,5" Height="NaN" Width="NaN"/>
+        <Label Grid.Row="6" Grid.Column="0" Content="Base Current (A):" Margin="5,5,5,5" Height="NaN" Width="NaN"/>
+        <TextBlock Grid.Row="6" Grid.Column="1" x:Name="baseCurrentTextBlock" Margin="5,5,5,5" Height="NaN" Width="NaN"/>
+        <oxy:Plot Grid.Column="1" x:Name="plot" Margin="144,10,10,10" Height="NaN" Width="NaN" Grid.ColumnSpan="3" Grid.RowSpan="7">
+            <oxy:Plot.Axes>
+                <oxy:LinearAxis Position="Left" Title="Voltage (V)"/>
+                <oxy:LinearAxis Position="Bottom" Title="Current (A)"/>
+            </oxy:Plot.Axes>
+            <oxy:Plot.Series>
+                <oxy:LineSeries x:Name="collectorVoltageSeries" Title="Collector Voltage" Color="Blue"/>
+                <oxy:LineSeries x:Name="emitterVoltageSeries" Title="Emitter Voltage" Color="Red"/>
+                <oxy:LineSeries x:Name="collectorCurrentSeries" Title="Collector Current" Color="Green"/>
+                <oxy:LineSeries x:Name="baseCurrentSeries" Title="Base Current" Color="Purple"/>
+            </oxy:Plot.Series>
+        </oxy:Plot>
+    </Grid>
+</Window>
