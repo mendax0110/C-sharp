@@ -1,0 +1,19 @@
+﻿<Window x:Class="TransCircSine.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:oxy="http://oxyplot.org/wpf"
+        Title="Transistor Circuit Sine Wave" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <RadioButton x:Name="NPN" Content="NPN"/>
+            <RadioButton x:Name="PNP" Content="PNP"/>
+            <Button Content="Plot" Click="Button_Click"/>
+        </StackPanel>
+        <oxy:PlotView x:Name="plotView" Grid.Row="2"/>
+    </Grid>
+</Window>
