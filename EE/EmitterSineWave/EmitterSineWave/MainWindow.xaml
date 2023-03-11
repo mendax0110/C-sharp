@@ -1,0 +1,29 @@
+﻿<Window x:Class="EmitterSineWave.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:oxy="clr-namespace:OxyPlot.Wpf;assembly=OxyPlot.Wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ComboBox x:Name="transistorType" HorizontalAlignment="Left" Margin="42,53,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem Content="NPN"/>
+            <ComboBoxItem Content="PNP"/>
+        </ComboBox>
+        <Label Content="Transistor Type:" HorizontalAlignment="Left" Margin="42,22,0,0" VerticalAlignment="Top"/>
+        <Button Content="Calculate Sinewave" HorizontalAlignment="Left" Margin="42,136,0,0" VerticalAlignment="Top" Height="30" Width="120" Click="Button_Click"/>
+
+        <oxy:Plot x:Name="plotView" Margin="0,200,0,0">
+            <oxy:Plot.Title>Sine Wave</oxy:Plot.Title>
+            <oxy:Plot.Background>White</oxy:Plot.Background>
+            <oxy:Plot.Axes>
+                <oxy:LinearAxis Position="Bottom" Minimum="-1" Maximum="1" MajorStep="0.2" Title="Time (s)"/>
+                <oxy:LinearAxis Position="Left" Minimum="-5" Maximum="5" MajorStep="1" Title="Voltage (V)"/>
+            </oxy:Plot.Axes>
+            <oxy:Plot.Series>
+                <oxy:LineSeries StrokeThickness="2" MarkerType="None" Color="Blue" ItemsSource="{Binding sinePoints}"/>
+            </oxy:Plot.Series>
+        </oxy:Plot>
+    </Grid>
+</Window>
