@@ -1,0 +1,49 @@
+﻿<Window x:Class="AmplifierCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Amplifier Calculator" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Input Section -->
+        <Label Content="Input Values:" Grid.Row="0" Grid.Column="0" Margin="5"/>
+        <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" Margin="5">
+            <Label Content="Vin:" Margin="0,0,5,0" Height="26"/>
+            <TextBox x:Name="VinTextBox" Width="100" Height="26"/>
+            <Label Content="V" Margin="5,0,0,0" Height="26"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal" Margin="5">
+            <Label Content="R1:" Margin="0,0,5,0"/>
+            <TextBox x:Name="R1TextBox" Width="103"/>
+            <Label Content="Ω" Margin="5,0,0,0"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal" Margin="5">
+            <Label Content="R2:" Margin="0,0,5,0"/>
+            <TextBox x:Name="R2TextBox" Width="100"/>
+            <Label Content="Ω" Margin="5,0,0,0"/>
+        </StackPanel>
+
+        <!-- Calculate Button -->
+        <Button x:Name="CalculateButton" Content="Calculate" Grid.Row="3" Grid.Column="0" Margin="0,58,15,186" Click="CalculateButton_Click"/>
+
+        <!-- Amplifier Values -->
+        <StackPanel Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" Orientation="Vertical" Margin="5,53,5,5">
+            <Label x:Name="ALabel" Content="A:"/>
+            <Label x:Name="BLabel" Content="B:"/>
+            <Label x:Name="CLabel" Content="C:"/>
+        </StackPanel>
+
+        <!-- Graph Section -->
+        <Label Content="Sine Wave Graph:" Grid.Row="3" Grid.Column="0" Margin="0,10,10,240"/>
+        <Canvas x:Name="GraphCanvas" Grid.Row="4" Grid.Column="1" Background="White" Margin="5"  Height="250"/>
+    </Grid>
+</Window>
