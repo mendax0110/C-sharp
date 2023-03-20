@@ -1,0 +1,16 @@
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\SerialLogicAnalyzer\SerialLogicAnalyzer\bin\Debug\SerialLogicAnalyzer.exe.config
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\SerialLogicAnalyzer\SerialLogicAnalyzer\bin\Debug\SerialLogicAnalyzer.exe
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\SerialLogicAnalyzer\SerialLogicAnalyzer\bin\Debug\SerialLogicAnalyzer.pdb
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\SerialLogicAnalyzer\SerialLogicAnalyzer\obj\Debug\SerialLogicAnalyzer.csproj.AssemblyReference.cache
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\SerialLogicAnalyzer\SerialLogicAnalyzer\obj\Debug\SerialLogicAnalyzer.csproj.SuggestedBindingRedirects.cache
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\SerialLogicAnalyzer\SerialLogicAnalyzer\obj\Debug\MainWindow.g.cs
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\SerialLogicAnalyzer\SerialLogicAnalyzer\obj\Debug\App.g.cs
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\SerialLogicAnalyzer\SerialLogicAnalyzer\obj\Debug\SerialLogicAnalyzer_MarkupCompile.cache
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\SerialLogicAnalyzer\SerialLogicAnalyzer\obj\Debug\SerialLogicAnalyzer_MarkupCompile.lref
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\SerialLogicAnalyzer\SerialLogicAnalyzer\obj\Debug\MainWindow.baml
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\SerialLogicAnalyzer\SerialLogicAnalyzer\obj\Debug\SerialLogicAnalyzer.g.resources
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\SerialLogicAnalyzer\SerialLogicAnalyzer\obj\Debug\SerialLogicAnalyzer.Properties.Resources.resources
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\SerialLogicAnalyzer\SerialLogicAnalyzer\obj\Debug\SerialLogicAnalyzer.csproj.GenerateResource.cache
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\SerialLogicAnalyzer\SerialLogicAnalyzer\obj\Debug\SerialLogicAnalyzer.csproj.CoreCompileInputs.cache
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\SerialLogicAnalyzer\SerialLogicAnalyzer\obj\Debug\SerialLogicAnalyzer.exe
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\SerialLogicAnalyzer\SerialLogicAnalyzer\obj\Debug\SerialLogicAnalyzer.pdb
