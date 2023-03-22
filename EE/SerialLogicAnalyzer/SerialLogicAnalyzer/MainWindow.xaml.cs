@@ -1,18 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.IO.Ports;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.IO.Ports;
-using System.IO;
 
 namespace SerialLogicAnalyzer
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
+        SerialPort port;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -22,192 +21,131 @@ namespace SerialLogicAnalyzer
         {
             try
             {
-                // get the COM ports with switch case statement
-                switch (COMPORTS.SelectedIndex)
-                {
-                    case 0:
-                        // connect to the selected port
-                        System.IO.Ports.SerialPort port = new System.IO.Ports.SerialPort();
-                        port.PortName = "COM1";
-                        port.BaudRate = 9600;
-                        port.Parity = Parity.None;
-                        port.DataBits = 8;
-                        port.StopBits = StopBits.One;
-                        port.Handshake = Handshake.None;
-                        port.RtsEnable = true;
-                        port.DtrEnable = true;
-                        port.DataReceived += new SerialDataReceivedEventHandler(port_DataReceived);
-                        break;
-                    case 1:
-                        // get the COM ports
-                        System.IO.Ports.SerialPort port1 = new System.IO.Ports.SerialPort();
-                        port1.PortName = "COM2";
-                        port1.BaudRate = 9600;
-                        port1.Parity = Parity.None;
-                        port1.DataBits = 8;
-                        port1.StopBits = StopBits.One;
-                        port1.Handshake = Handshake.None;
-                        port1.RtsEnable = true;
-                        port1.DtrEnable = true;
-                        port1.DataReceived += new SerialDataReceivedEventHandler(port_DataReceived);
-                        break;
-                    case 2:
-                        // get the COM ports
-                        System.IO.Ports.SerialPort port2 = new System.IO.Ports.SerialPort();
-                        port2.PortName = "COM2";
-                        port2.BaudRate = 9600;
-                        port2.Parity = Parity.None;
-                        port2.DataBits = 8;
-                        port2.StopBits = StopBits.One;
-                        port2.Handshake = Handshake.None;
-                        port2.RtsEnable = true;
-                        port2.DtrEnable = true;
-                        port2.DataReceived += new SerialDataReceivedEventHandler(port_DataReceived);
-                        break;
-                    case 3:
-                        // get the COM ports
-                        System.IO.Ports.SerialPort port3 = new System.IO.Ports.SerialPort();
-                        port3.PortName = "COM2";
-                        port3.BaudRate = 9600;
-                        port3.Parity = Parity.None;
-                        port3.DataBits = 8;
-                        port3.StopBits = StopBits.One;
-                        port3.Handshake = Handshake.None;
-                        port3.RtsEnable = true;
-                        port3.DtrEnable = true;
-                        port3.DataReceived += new SerialDataReceivedEventHandler(port_DataReceived);
-                        break;
-                    case 4:
-                        // get the COM ports
-                        System.IO.Ports.SerialPort port4 = new System.IO.Ports.SerialPort();
-                        port4.PortName = "COM2";
-                        port4.BaudRate = 9600;
-                        port4.Parity = Parity.None;
-                        port4.DataBits = 8;
-                        port4.StopBits = StopBits.One;
-                        port4.Handshake = Handshake.None;
-                        port4.RtsEnable = true;
-                        port4.DtrEnable = true;
-                        port4.DataReceived += new SerialDataReceivedEventHandler(port_DataReceived);
-                        break;
-                    case 5:
-                        // get the COM ports
-                        System.IO.Ports.SerialPort port5 = new System.IO.Ports.SerialPort();
-                        port5.PortName = "COM2";
-                        port5.BaudRate = 9600;
-                        port5.Parity = Parity.None;
-                        port5.DataBits = 8;
-                        port5.StopBits = StopBits.One;
-                        port5.Handshake = Handshake.None;
-                        port5.RtsEnable = true;
-                        port5.DtrEnable = true;
-                        port5.DataReceived += new SerialDataReceivedEventHandler(port_DataReceived);
-                        break;
-                    default:
-                        MessageBox.Show("Please select a COM port", "Error");
-                        break;
+                // Check which COM port is selected
+                ComboBox comboBox = (ComboBox)sender;
+                ComboBoxItem selectedItem = (ComboBoxItem)comboBox.SelectedItem;
+                string portName = selectedItem.Content.ToString();
 
+                // Disconnect from any previously open port
+                if (port != null && port.IsOpen)
+                {
+                    port.DataReceived -= new SerialDataReceivedEventHandler(port_DataReceived);
+                    port.Close();
                 }
+
+                // Connect to the selected port
+                port = new SerialPort(portName, 9600, Parity.None, 8, StopBits.One);
+                port.Handshake = Handshake.None;
+                port.RtsEnable = true;
+                port.DtrEnable = true;
+                port.DataReceived += new SerialDataReceivedEventHandler(port_DataReceived);
+                port.Open();
             }
-            catch
+            catch (Exception ex)
             {
-                MessageBox.Show("Error opening selected COM Port", "Error");
+                MessageBox.Show("Error opening selected COM Port: " + ex.Message, "Error");
             }
         }
 
         private void port_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
-            // get the data from the COM port
+            // Get the data from the COM port
             SerialPort sp = (SerialPort)sender;
             string indata = sp.ReadExisting();
-            this.Dispatcher.Invoke(new Action(() => LOG.Text += indata));
+
+            // Update the LOG textbox on the UI thread
+            Dispatcher.Invoke(new Action(() => LOG.Text += indata));
         }
 
         private void Connect_Click(object sender, RoutedEventArgs e)
         {
-            // check which combox item is selected
-           
+            try
+            {
+                // Connect to the selected port if not already connected
+                if (port != null && !port.IsOpen)
+                {
+                    port.Open();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error connecting selected COM Port: " + ex.Message, "Error");
+            }
         }
 
-        private void Disconnect_Click_1(object sender, RoutedEventArgs e)
+        private void Disconnect_Click(object sender, RoutedEventArgs e)
         {
-            // disconnect from the selected port
-            if (COMPORTS != null)
+            try
             {
-                // disconnect from the selected port
+                // Disconnect from the selected port
+                if (port != null && port.IsOpen)
+                {
+                    port.DataReceived -= new SerialDataReceivedEventHandler(port_DataReceived);
+                    port.Close();
+                }
             }
-            else
+            catch (Exception ex)
             {
-                // show error message
+                MessageBox.Show("Error disconnecting selected COM Port: " + ex.Message, "Error");
             }
-
         }
 
         private void clear_Click(object sender, RoutedEventArgs e)
         {
-            // clear the LOG textbox
-            if (LOG != null)
+            try
             {
-                // clear the LOG textbox
+                // Clear the LOG textbox
+                LOG.Text = "";
             }
-            else
+            catch (Exception ex)
             {
-                // show error message
+                MessageBox.Show("Error Logging output: " + ex.Message, "Error");
             }
-
-
         }
 
         private void save_Click(object sender, RoutedEventArgs e)
         {
-            // save the LOG textbox to a file
-            if(LOG != null)
+            // Save the LOG textbox to a file
+            if (LOG.Text.Length > 0)
             {
-                // save the LOG textbox to a file
+                Microsoft.Win32.SaveFileDialog dlg = new Microsoft.Win32.SaveFileDialog();
+                dlg.FileName = "SerialLog";
+                dlg.DefaultExt = ".txt";
+                dlg.Filter = "Text documents (.txt)|*.txt";
+
+                Nullable<bool> result = dlg.ShowDialog();
+                if (result == true)
+                {
+                    string filename = dlg.FileName;
+                    using (StreamWriter writer = new StreamWriter(filename))
+                    {
+                        writer.Write(LOG.Text);
+                    }
+                }
             }
             else
             {
-                // show error message
+                MessageBox.Show("LOG is empty, nothing to save", "Error");
             }
         }
 
         private void load_Click(object sender, RoutedEventArgs e)
         {
-            // load the LOG textbox from a file
-            if (LOG != null)
-            {
-                // load the LOG textbox from a file
-            }
-            else
-            {
-                // show error message
-            }
+            // Load a LOG file into the LOG textbox
+            Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
+            dlg.FileName = "SerialLog";
+            dlg.DefaultExt = ".txt";
+            dlg.Filter = "Text documents (.txt)|*.txt";
 
-        }
-
-        private void help_Click(object sender, RoutedEventArgs e)
-        {
-            // show help message
-            if (LOG != null)
+            Nullable<bool> result = dlg.ShowDialog();
+            if (result == true)
             {
-                // show help message
-            }
-            else
-            {
-                // show error message
-            }
-        }
-
-        private void LOG_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            // show the LOG textbox
-            if (LOG != null)
-            {
-                // show the LOG textbox
-            }
-            else
-            {
-                // show error message
+                string filename = dlg.FileName;
+                using (StreamReader reader = new StreamReader(filename))
+                {
+                    LOG.Text = reader.ReadToEnd();
+                }
             }
         }
     }
