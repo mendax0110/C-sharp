@@ -1,0 +1,30 @@
+﻿<Window x:Class="TransistorLEDCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Transistor LED Calculator" Height="406" Width="604" ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Content="Supply Voltage (V):" />
+        <TextBox Grid.Row="0" Name="txtSupplyVoltage" Margin="111,0,389,23" Grid.RowSpan="2" />
+        <Label Grid.Row="1" Grid.Column="0" Content="LED Voltage (V):" Margin="0,0,487,26" Grid.RowSpan="2" />
+        <TextBox Grid.Row="1" Name="txtLedVoltage" HorizontalAlignment="Right" Margin="0,0,390,3" Width="103" />
+        <Label Grid.Row="2" Grid.Column="0" Content="LED Current (mA):" />
+        <TextBox Grid.Row="1" Name="txtLedCurrent" Margin="111,23,389,26" Grid.RowSpan="3" />
+        <Label Grid.Row="3" Grid.Column="0" Content="Transistor hFE:" />
+        <TextBox Grid.Row="3" Name="txtHfe" Margin="111,0,390,286" Grid.RowSpan="2" />
+        <Button Grid.Row="1" Grid.Column="0" Name="btnCalculate" Content="Calculate" Click="btnCalculate_Click" Height="50" Margin="343,11,56,17" Width="NaN" Grid.RowSpan="3"/>
+        <Border Grid.Row="4" Grid.Column="0" BorderBrush="Black" BorderThickness="1" Margin="16,10,4,10" Padding="10">
+            <Canvas Name="graphCanvas" Width="400" Height="200" />
+        </Border>
+    </Grid>
+</Window>
