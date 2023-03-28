@@ -1,0 +1,15 @@
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\DifferentialEqCalc\DifferentialEqCalc\bin\Debug\DifferentialEqCalc.exe.config
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\DifferentialEqCalc\DifferentialEqCalc\bin\Debug\DifferentialEqCalc.exe
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\DifferentialEqCalc\DifferentialEqCalc\bin\Debug\DifferentialEqCalc.pdb
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\DifferentialEqCalc\DifferentialEqCalc\obj\Debug\DifferentialEqCalc.csproj.AssemblyReference.cache
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\DifferentialEqCalc\DifferentialEqCalc\obj\Debug\DifferentialEqCalc.csproj.SuggestedBindingRedirects.cache
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\DifferentialEqCalc\DifferentialEqCalc\obj\Debug\MainWindow.baml
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\DifferentialEqCalc\DifferentialEqCalc\obj\Debug\MainWindow.g.cs
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\DifferentialEqCalc\DifferentialEqCalc\obj\Debug\App.g.cs
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\DifferentialEqCalc\DifferentialEqCalc\obj\Debug\DifferentialEqCalc_MarkupCompile.cache
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\DifferentialEqCalc\DifferentialEqCalc\obj\Debug\DifferentialEqCalc.g.resources
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\DifferentialEqCalc\DifferentialEqCalc\obj\Debug\DifferentialEqCalc.Properties.Resources.resources
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\DifferentialEqCalc\DifferentialEqCalc\obj\Debug\DifferentialEqCalc.csproj.GenerateResource.cache
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\DifferentialEqCalc\DifferentialEqCalc\obj\Debug\DifferentialEqCalc.csproj.CoreCompileInputs.cache
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\DifferentialEqCalc\DifferentialEqCalc\obj\Debug\DifferentialEqCalc.exe
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\DifferentialEqCalc\DifferentialEqCalc\obj\Debug\DifferentialEqCalc.pdb
