@@ -1,0 +1,15 @@
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\BJTorCMOS\BJTorCMOS\bin\Debug\BJTorCMOS.exe.config
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\BJTorCMOS\BJTorCMOS\bin\Debug\BJTorCMOS.exe
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\BJTorCMOS\BJTorCMOS\bin\Debug\BJTorCMOS.pdb
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\BJTorCMOS\BJTorCMOS\obj\Debug\BJTorCMOS.csproj.AssemblyReference.cache
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\BJTorCMOS\BJTorCMOS\obj\Debug\BJTorCMOS.csproj.SuggestedBindingRedirects.cache
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\BJTorCMOS\BJTorCMOS\obj\Debug\MainWindow.baml
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\BJTorCMOS\BJTorCMOS\obj\Debug\MainWindow.g.cs
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\BJTorCMOS\BJTorCMOS\obj\Debug\App.g.cs
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\BJTorCMOS\BJTorCMOS\obj\Debug\BJTorCMOS_MarkupCompile.cache
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\BJTorCMOS\BJTorCMOS\obj\Debug\BJTorCMOS.g.resources
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\BJTorCMOS\BJTorCMOS\obj\Debug\BJTorCMOS.Properties.Resources.resources
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\BJTorCMOS\BJTorCMOS\obj\Debug\BJTorCMOS.csproj.GenerateResource.cache
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\BJTorCMOS\BJTorCMOS\obj\Debug\BJTorCMOS.csproj.CoreCompileInputs.cache
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\BJTorCMOS\BJTorCMOS\obj\Debug\BJTorCMOS.exe
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\BJTorCMOS\BJTorCMOS\obj\Debug\BJTorCMOS.pdb
