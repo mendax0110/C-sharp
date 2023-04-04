@@ -1,0 +1,15 @@
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\CMOSGraph\CMOSGraph\bin\Debug\CMOSGraph.exe.config
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\CMOSGraph\CMOSGraph\bin\Debug\CMOSGraph.exe
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\CMOSGraph\CMOSGraph\bin\Debug\CMOSGraph.pdb
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\CMOSGraph\CMOSGraph\obj\Debug\CMOSGraph.csproj.AssemblyReference.cache
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\CMOSGraph\CMOSGraph\obj\Debug\CMOSGraph.csproj.SuggestedBindingRedirects.cache
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\CMOSGraph\CMOSGraph\obj\Debug\MainWindow.baml
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\CMOSGraph\CMOSGraph\obj\Debug\MainWindow.g.cs
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\CMOSGraph\CMOSGraph\obj\Debug\App.g.cs
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\CMOSGraph\CMOSGraph\obj\Debug\CMOSGraph_MarkupCompile.cache
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\CMOSGraph\CMOSGraph\obj\Debug\CMOSGraph.g.resources
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\CMOSGraph\CMOSGraph\obj\Debug\CMOSGraph.Properties.Resources.resources
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\CMOSGraph\CMOSGraph\obj\Debug\CMOSGraph.csproj.GenerateResource.cache
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\CMOSGraph\CMOSGraph\obj\Debug\CMOSGraph.csproj.CoreCompileInputs.cache
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\CMOSGraph\CMOSGraph\obj\Debug\CMOSGraph.exe
+C:\Users\Adrian\OneDrive - HTL-Rankweil\HTL-Aufbaulehrgang\2.Semester\Fächer\FSST\01_programmentwurf_programme_cs\CMOSGraph\CMOSGraph\obj\Debug\CMOSGraph.pdb
