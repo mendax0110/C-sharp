@@ -12,20 +12,24 @@ namespace ATMEGA2560Serial
 {
     public partial class MainWindow : Window
     {
+        // Create a new SerialPort object
         SerialPort serialPort;
 
+        // Constructor and initialize the serial ports combobox
         public MainWindow()
         {
             InitializeComponent();
             PopulateSerialPorts();
         }
 
+        // Populate the serial ports combobox
         private void PopulateSerialPorts()
         {
             string[] ports = SerialPort.GetPortNames();
             ports_combobox.ItemsSource = ports;
         }
 
+        // When the user selects a port, create a new SerialPort object
         private void ports_combobox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (serialPort != null && serialPort.IsOpen)
@@ -40,6 +44,7 @@ namespace ATMEGA2560Serial
             }
         }
 
+        // Connect to the serial port, and open the port
         private void connectSerial_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -56,6 +61,7 @@ namespace ATMEGA2560Serial
             }
         }
 
+        // Disconnect from the serial port, and close the port
         private void disconnectSerial_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -71,6 +77,7 @@ namespace ATMEGA2560Serial
             }
         }
 
+        // Send data to the serial port, and display it in the text box
         private void saveDataSerial_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -90,6 +97,7 @@ namespace ATMEGA2560Serial
             }
         }
 
+        // Display the incoming data in a text box, and scroll to the bottom
         private void serialPort_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
             string data = serialPort.ReadExisting();
