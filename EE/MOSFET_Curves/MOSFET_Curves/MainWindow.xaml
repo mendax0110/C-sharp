@@ -1,0 +1,20 @@
+﻿<Window x:Class="MOSFET_Curves.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MOSFET Characteristic Curves" Height="450" Width="800">
+    <Canvas>
+        <TextBlock Text="Vgs: " Canvas.Left="10" Canvas.Top="10" VerticalAlignment="Center"/>
+        <Slider x:Name="VgsSlider" Minimum="0" Maximum="5" Value="2.5" TickFrequency="0.5" TickPlacement="BottomRight" Width="150" Canvas.Left="50" Canvas.Top="10" ValueChanged="VgsSlider_ValueChanged"/>
+        <TextBlock Text="{Binding ElementName=VgsSlider, Path=Value}" Margin="0,0,10,0" Canvas.Left="210" Canvas.Top="10" VerticalAlignment="Center"/>
+
+        <TextBlock Text="Vds: " Canvas.Left="10" Canvas.Top="54" VerticalAlignment="Top"/>
+        <Slider x:Name="VdsSlider" Minimum="0" Maximum="10" Value="5" TickFrequency="1" TickPlacement="BottomRight" Width="150" Canvas.Left="50" Canvas.Top="58" ValueChanged="VdsSlider_ValueChanged"/>
+        <TextBlock Text="{Binding ElementName=VdsSlider, Path=Value}" Canvas.Left="211" Canvas.Top="58" VerticalAlignment="Top"/>
+
+        <Canvas x:Name="GraphCanvas" Canvas.Left="10" Canvas.Top="70">
+            <Rectangle Width="{Binding ActualWidth, ElementName=GraphCanvas}" Height="{Binding ActualHeight, ElementName=GraphCanvas}" Fill="White"/>
+            <Polyline x:Name="IdCurve" StrokeThickness="2" Stroke="Blue"/>
+            <Polyline x:Name="GmCurve" StrokeThickness="2" Stroke="Red"/>
+        </Canvas>
+    </Canvas>
+</Window>
