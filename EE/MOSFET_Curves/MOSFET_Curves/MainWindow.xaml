@@ -11,8 +11,31 @@
         <Slider x:Name="VdsSlider" Minimum="0" Maximum="10" Value="5" TickFrequency="1" TickPlacement="BottomRight" Width="150" Canvas.Left="50" Canvas.Top="58" ValueChanged="VdsSlider_ValueChanged"/>
         <TextBlock Text="{Binding ElementName=VdsSlider, Path=Value}" Canvas.Left="211" Canvas.Top="58" VerticalAlignment="Top"/>
 
-        <Canvas x:Name="GraphCanvas" Canvas.Left="10" Canvas.Top="70">
-            <Rectangle Width="{Binding ActualWidth, ElementName=GraphCanvas}" Height="{Binding ActualHeight, ElementName=GraphCanvas}" Fill="White"/>
+        <Canvas x:Name="GraphCanvas" Canvas.Top="80" Height="356" RenderTransformOrigin="0.5,0.5" Width="802">
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1" ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+            <Canvas.Background>
+                <DrawingBrush TileMode="Tile" Viewport="0,0,10,10" ViewportUnits="Absolute">
+                    <DrawingBrush.Drawing>
+                        <GeometryDrawing>
+                            <GeometryDrawing.Geometry>
+                                <GeometryGroup>
+                                    <RectangleGeometry Rect="0,0,10,10"/>
+                                </GeometryGroup>
+                            </GeometryDrawing.Geometry>
+                            <GeometryDrawing.Pen>
+                                <Pen Brush="Black" Thickness="0.1"/>
+                            </GeometryDrawing.Pen>
+                        </GeometryDrawing>
+                    </DrawingBrush.Drawing>
+                </DrawingBrush>
+            </Canvas.Background>
             <Polyline x:Name="IdCurve" StrokeThickness="2" Stroke="Blue"/>
             <Polyline x:Name="GmCurve" StrokeThickness="2" Stroke="Red"/>
         </Canvas>
