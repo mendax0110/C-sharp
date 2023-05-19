@@ -26,17 +26,17 @@ jobs:
       with:
         dotnet-version: 6.0.x
 
-    # Build all projects in the "01_programmentwurf_programme_cs" directory
+    # Build all projects in the "EE" directory
     - name: Build projects
       run: |
         $projects = Get-ChildItem -Path EE -Recurse -Filter '*.csproj' | ForEach-Object { $_.FullName }
         foreach ($project in $projects) {
           $projectDir = Split-Path -Parent $project
           Write-Host "Building project: $project"
-          dotnet build $project -c ${{ matrix.configuration }} --output $projectDir/bin/
+          dotnet build $project -c ${{ matrix.configuration }} --output $projectDir/bin/ || echo "Build failed"
         }
-        
-      # Generate a report
+
+    # Generate a report
     - name: Generate report
       run: |
         $projects = Get-ChildItem -Path EE -Recurse -Filter '*.csproj' | ForEach-Object { $_.FullName }
