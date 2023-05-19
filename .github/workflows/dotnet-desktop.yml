@@ -35,3 +35,19 @@ jobs:
           Write-Host "Building project: $project"
           dotnet build $project -c ${{ matrix.configuration }} --output $projectDir/bin/
         }
+        
+      # Generate a report
+    - name: Generate report
+      run: |
+        $projects = Get-ChildItem -Path EE -Recurse -Filter '*.csproj' | ForEach-Object { $_.FullName }
+        $report = foreach ($project in $projects) {
+          $projectDir = Split-Path -Parent $project
+          $outputPath = "$projectDir/bin/"
+          $projectName = $project | Split-Path -Leaf
+          $projectStatus = if (Test-Path -Path $outputPath) { "Build succeeded" } else { "Build failed" }
+          [PSCustomObject]@{
+            ProjectName = $projectName
+            Status = $projectStatus
+          }
+        }
+        $report | Format-Table -AutoSize
