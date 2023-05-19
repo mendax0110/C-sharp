@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -37,22 +38,29 @@ namespace MOSFET_Curves
         // update graph handler
         private void UpdateGraph()
         {
-            // Check if the canvas has been initialized
-            if (vdsCurve != null && idCurve != null)
+            try
             {
-                vdsCurve.Points.Clear();
-                idCurve.Points.Clear();
-
-                double vgs = VgsSlider.Value;
-                double vdsMax = VdsSlider.Value;
-
-                // Calculate points
-                for (double vds = 0; vds <= vdsMax; vds += 0.1)
+                // Check if the canvas has been initialized
+                if (vdsCurve != null && idCurve != null)
                 {
-                    double id = CalculateId(vgs, vds);
-                    vdsCurve.Points.Add(new Point(vds * xScale, canvasHeight - id * yScale));
-                    idCurve.Points.Add(new Point(vds * xScale, canvasHeight - vds * yScale));
+                    vdsCurve.Points.Clear();
+                    idCurve.Points.Clear();
+
+                    double vgs = VgsSlider.Value;
+                    double vdsMax = VdsSlider.Value;
+
+                    // Calculate points
+                    for (double vds = 0; vds <= vdsMax; vds += 0.1)
+                    {
+                        double id = CalculateId(vgs, vds);
+                        vdsCurve.Points.Add(new Point(vds * xScale, canvasHeight - id * yScale));
+                        idCurve.Points.Add(new Point(vds * xScale, canvasHeight - vds * yScale));
+                    }
                 }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error");
             }
         }
 
