@@ -1,0 +1,37 @@
+name: .NET Core Desktop
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        configuration: [Debug, Release]
+
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    # Install the .NET Core workload
+    - name: Install .NET Core
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 6.0.x
+
+    # Build all projects in the "01_programmentwurf_programme_cs" directory
+    - name: Build projects
+      run: |
+        $projects = Get-ChildItem -Path EE -Recurse -Filter '*.csproj' | ForEach-Object { $_.FullName }
+        foreach ($project in $projects) {
+          $projectDir = Split-Path -Parent $project
+          Write-Host "Building project: $project"
+          dotnet build $project -c ${{ matrix.configuration }} --output $projectDir/bin/
+        }
