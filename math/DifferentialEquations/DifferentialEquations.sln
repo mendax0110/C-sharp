@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DifferentialEquations", "DifferentialEquations\DifferentialEquations.csproj", "{EB0AB2D6-379F-41C7-9FDE-366F332535EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB0AB2D6-379F-41C7-9FDE-366F332535EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB0AB2D6-379F-41C7-9FDE-366F332535EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB0AB2D6-379F-41C7-9FDE-366F332535EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB0AB2D6-379F-41C7-9FDE-366F332535EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A56A118A-31E7-40FA-9485-E8A028DE8CE2}
+	EndGlobalSection
+EndGlobal
