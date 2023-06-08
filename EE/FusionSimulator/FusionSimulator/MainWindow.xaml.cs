@@ -42,18 +42,18 @@ namespace FusionSimulator
                 MessageBox.Show("Invalid fuel amount");
                 return;
             }
-            double plasmaDensity;
-            if (!double.TryParse(plasmaDensityTextBox.Text, out plasmaDensity) || plasmaDensity <= 0)
-            {
-                MessageBox.Show("Invalid plasma density");
-                return;
-            }
-            double ionSpecies;
-            if (!double.TryParse(ionSpeciesTextBox.Text, out ionSpecies) || ionSpecies <= 0)
-            {
-                MessageBox.Show("Invalid ion species");
-                return;
-            }
+            double plasmaDensity = 0;
+            //if (!double.TryParse(/*plasmaDensityTextBox.Text*/, out plasmaDensity) || plasmaDensity <= 0)
+            //{
+            //    MessageBox.Show("Invalid plasma density");
+            //    return;
+            //}
+            double ionSpecies = 0;
+            //if (!double.TryParse(ionSpeciesTextBox.Text, out ionSpecies) || ionSpecies <= 0)
+            //{
+            //    MessageBox.Show("Invalid ion species");
+            //    return;
+            //}
             double temperature;
             if (!double.TryParse(temperatureTextBox.Text, out temperature) || temperature <= 0)
             {
@@ -66,12 +66,12 @@ namespace FusionSimulator
                 MessageBox.Show("Invalid pressure");
                 return;
             }
-            double plasmaLosses;
-            if (!double.TryParse(plasmaLossesTextBox.Text, out plasmaLosses) || plasmaLosses < 0)
-            {
-                MessageBox.Show("Invalid plasma losses");
-                return;
-            }
+            double plasmaLosses = 0;
+            //if (!double.TryParse(plasmaLossesTextBox.Text, out plasmaLosses) || plasmaLosses < 0)
+            //{
+            //    MessageBox.Show("Invalid plasma losses");
+            //    return;
+            //}
 
             FusionSimulation simulation = new FusionSimulation(fuelType, fuelAmount, plasmaDensity, ionSpecies, temperature, pressure, plasmaLosses);
             List<double> results = simulation.Simulate();

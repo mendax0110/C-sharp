@@ -86,11 +86,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Adrian\\OneDrive - HTL-Rankweil\\HTL-Aufbaulehrgang\\2.Semester\\Fächer\\FSST\\01_programmentwurf_programme_cs\\FusionSimulator\\FusionSimulator\\FusionSimulator.csproj",
+      "projectUniqueName": "C:\\Users\\Adrian\\Documents\\git\\C-sharp\\EE\\FusionSimulator\\FusionSimulator\\FusionSimulator.csproj",
       "projectName": "FusionSimulator",
-      "projectPath": "C:\\Users\\Adrian\\OneDrive - HTL-Rankweil\\HTL-Aufbaulehrgang\\2.Semester\\Fächer\\FSST\\01_programmentwurf_programme_cs\\FusionSimulator\\FusionSimulator\\FusionSimulator.csproj",
+      "projectPath": "C:\\Users\\Adrian\\Documents\\git\\C-sharp\\EE\\FusionSimulator\\FusionSimulator\\FusionSimulator.csproj",
       "packagesPath": "C:\\Users\\Adrian\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Adrian\\OneDrive - HTL-Rankweil\\HTL-Aufbaulehrgang\\2.Semester\\Fächer\\FSST\\01_programmentwurf_programme_cs\\FusionSimulator\\FusionSimulator\\obj\\",
+      "outputPath": "C:\\Users\\Adrian\\Documents\\git\\C-sharp\\EE\\FusionSimulator\\FusionSimulator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Adrian\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -143,7 +143,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   },

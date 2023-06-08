@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mWlePwJVPthfsH7KQzYQoztDgWSL85MHeZbsIXq9yU4ttrPrgElxqRpYeMbLWGBpQW9x3CjQN8euF32F+17Tnw==",
+  "dgSpecHash": "fZdWjzT33T9M0/MpNerhJrZt09nArPl7VIK5hjn18J43ci6AvPMZdTlniciS3/z0j8ere/ZLhLnNd55WTva8QA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Adrian\\OneDrive - HTL-Rankweil\\HTL-Aufbaulehrgang\\2.Semester\\Fächer\\FSST\\01_programmentwurf_programme_cs\\FusionSimulator\\FusionSimulator\\FusionSimulator.csproj",
+  "projectFilePath": "C:\\Users\\Adrian\\Documents\\git\\C-sharp\\EE\\FusionSimulator\\FusionSimulator\\FusionSimulator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Adrian\\.nuget\\packages\\livecharts\\0.9.7\\livecharts.0.9.7.nupkg.sha512",
     "C:\\Users\\Adrian\\.nuget\\packages\\livecharts.wpf\\0.9.7\\livecharts.wpf.0.9.7.nupkg.sha512"
