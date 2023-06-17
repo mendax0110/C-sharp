@@ -1,0 +1,30 @@
+﻿<Window x:Class="RingspuleCalc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RingspuleCalc"
+        mc:Ignorable="d"
+        Title="Ringspule" Height="450" Width="800">
+    <DockPanel>
+        <StackPanel Width="200" Background="Gray">
+            <Label Content="Anzahl der Windungen:"/>
+            <TextBox x:Name="txtWindungen"/>
+            <Label Content="Stromstärke (A):"/>
+            <TextBox x:Name="txtStromstaerke"/>
+            <Label Content="Länge der Ringspule (m):"/>
+            <TextBox x:Name="txtLaenge"/>
+            <Label Content="Radius der Ringspule (m):"/>
+            <TextBox x:Name="txtRadius"/>
+            <Button Content="Berechnen" Click="CalculateButton_Click"/>
+        </StackPanel>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Canvas x:Name="animations" Grid.Row="0" Background="White"/>
+            <ListBox x:Name="output" Grid.Row="1"/>
+        </Grid>
+    </DockPanel>
+</Window>
