@@ -1,0 +1,30 @@
+﻿<Window x:Class="Coils.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Coils"
+        mc:Ignorable="d"
+        Title="Coils in DC-Circuit" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <StackPanel Width="200" Background="Gray">
+            <Label Content="L(mH):"/>
+            <TextBox x:Name="L" TextChanged="L_TextChanged"/>
+            <Label Content="R(Ohm):"/>
+            <TextBox x:Name="R" TextChanged="R_TextChanged"/>
+            <Label Content="U(Volt):"/>
+            <TextBox x:Name="U" TextChanged="U_TextChanged"/>
+            <Label Content=""/>
+            <Button x:Name="calculateCurrentCurve" Content="Calculate" Click="CalculateCurrentCurve_Click"/>
+            <Label Content=""/>
+            <ListBox x:Name="OutputTauAndCurrent" Height="100" SelectionChanged="OutputTauAndCurrent_SelectionChanged"/>
+        </StackPanel>
+
+        <Canvas x:Name="DrawCurrentCurve" Background="White" Grid.Column="1"/>
+    </Grid>
+</Window>
