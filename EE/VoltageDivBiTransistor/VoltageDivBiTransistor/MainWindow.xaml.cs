@@ -13,6 +13,7 @@ namespace VoltageDivBiTransistor
             InitializeComponent();
         }
 
+        // Calculate the voltage divider and bipolar transistor
         private void CalculateButton_Click(object sender, RoutedEventArgs e)
         {
             double voltage, resistor1, resistor2, beta;
